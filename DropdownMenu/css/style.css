@@ -1,0 +1,92 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url("../assets/images/beach2.jpg");
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
+  font-family: sans-serif;
+}
+.menu-bar {
+  background: rgb(95, 175, 15);
+  text-align: center;
+}
+.menu-bar ul {
+  list-style: none;
+  display: inline-flex;
+  color: #fff;
+}
+
+.menu-bar ul li {
+  width: 120px;
+  margin: 15px;
+  padding: 15px;
+  transition: all 300ms ease-out;
+}
+.menu-bar ul li a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.active,
+.menu-bar ul li:hover {
+  background: #3ddb15;
+  border-radius: 0.5rem;
+  cursor: pointer;
+}
+
+.menu-bar .fa {
+  margin-right: 8px;
+}
+
+.sub-menu-1 {
+  display: none;
+}
+.menu-bar ul li:hover .sub-menu-1 {
+  display: block;
+  position: absolute;
+  background: rgb(95, 175, 15);
+  margin-top: 15px;
+  margin-left: -15px;
+}
+
+.menu-bar ul li:hover .sub-menu-1 ul {
+  display: block;
+  margin: 10px;
+  text-transform: capitalize;
+}
+
+.menu-bar ul li:hover .sub-menu-1 ul li {
+  width: 150px;
+  padding: 10px;
+  border-bottom: 1px dotted #fff;
+  background: transparent;
+  border-radius: 0;
+  text-align: left;
+}
+
+.menu-bar ul li:hover .sub-menu-1 ul li:last-child {
+  border-bottom: none;
+}
+.menu-bar ul li:hover .sub-menu-1 ul li a:hover {
+  color: #b2ff00;
+}
+
+.fa-angle-right {
+  float: right;
+}
+
+.sub-menu-2 {
+  display: none;
+}
+.hover-me:hover .sub-menu-2 {
+  position: absolute;
+  display: block;
+  margin-top: -40px;
+  margin-left: 140px;
+  background: rgba(95, 175, 15);
+}
